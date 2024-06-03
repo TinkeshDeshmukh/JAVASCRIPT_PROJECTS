@@ -4,7 +4,7 @@ const flip_btn=document.getElementById("flip")
 const coin=document.getElementById("coin");
 const reset=document.getElementById("Reset")
 const audio=document.getElementById("audio");
-head.textContent="Flip coin"
+head.textContent="Flip "
 
 // audio.src="D:\WEB_DEVELOPMENT\javascript projects\coin\coin-flip-88793"
 
@@ -31,5 +31,5 @@ flip_btn.addEventListener("click",()=>{
 })
 
 reset.addEventListener("click",()=>{
-    head.textContent=" Flip  Coin"
+    head.textContent=" Flip "
 })
