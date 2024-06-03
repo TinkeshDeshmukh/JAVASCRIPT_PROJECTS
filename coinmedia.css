@@ -1,11 +1,11 @@
 @media screen and (max-width:766px){
    .buttons{
-    margin-top: 400px;
+    margin-top: 300px;
     
    }
    .heads{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
    }
 }
