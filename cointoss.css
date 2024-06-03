@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,#270944,#48107c,#8016d1,#b15eff);
+    animation: entry 2s ease-in-out;   
+
+}
+.heads{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    /* background-color: aqua; */
+    position: absolute;
+  
+
+}
+.heads{
+    background-color: rgba(18, 16, 16, 0.563);
+    text-shadow: 2px 2px 5px rgb(255, 2, 2);
+    color: rgb(255, 253, 253);
+    box-shadow: 2px 2px 15px white;
+
+}
+
+.coin{
+    /* position:absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200PX;
+    
+}
+
+
+@keyframes heads-spin{
+    0%{
+        transform: translateY(0px) scale(1) rotateX(0deg);
+    }
+    50%{
+        transform: translateY(-700px) scale(0.9) rotateX(1900deg);
+    }
+    100%{
+        transform: translateY(0px) scale(1) rotateX(2880deg);
+    }
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px white;
+    color: red;
+    animation: header 2s ease-in 100ms;
+      
+
+    
+}
+.btn1{
+    /* position: fixed;
+    bottom: 20px;
+    left: 30%; */
+    padding: 25px;
+    width: 200px;
+    border-radius: 30px;
+    border: solid #b361ff;
+    background-color: #48107c;
+    color: white;
+    font-size: 2rem;
+    transition: all 500ms;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    gap: 20px;
+    /* width: 100%;? */
+}
+.btn2{
+    /* position: fixed;
+    bottom: 20px;
+    right: 30%; */
+    padding: 25px;
+    width:200px;
+    border-radius: 30px;
+    border: solid #b361ff;
+    background-color: #48107c;
+    color: white;
+    font-size: 2rem;
+    transition: all 500ms;
+}
+.btn1:hover{
+    background-color: rgb(18, 81, 18);
+    border:solid greenyellow;
+}
+.btn2:hover{
+    background-color: rgb(18, 81, 18);
+    border:solid greenyellow;
+}
+@keyframes entry{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes header{
+    0%{
+        visibility: hidden;
+        transform: translateX(-3500px);
+    }
+    25%{
+        visibility: hidden;
+        transform: translateX(-3000px);
+    }
+    50%{
+        visibility: hidden;
+        transform: translateX((-2000px));
+    }
+    75%{
+        visibility: hidden;
+        transform: translateX(-1000px);
+    }
+    100%{
+        visibility: visible;
+        transform: translate(0px);
+
+    }
+}
